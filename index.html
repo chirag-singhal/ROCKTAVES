@@ -2,20 +2,21 @@
 <html>
 <head>
 	<title>ROCKTAVES 2k18</title>
-</head>
-<body>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style type="text/css">
+    <style type="text/css">
 	html,body{
 		margin: 0;
 		padding: 0;
 		height: 100%;
 		width: 100%;
+		font-family: 'Montserrat', sans-serif;
 	}
 	.nav{
 		background-color: grey;
-		width: 20%;
-		height: 100%;
+		flex: : 20%;
+		height: 100vh;
 	}
 	#oasislogo{
 		width: 100%;
@@ -30,29 +31,58 @@
 	.links{
 		text-decoration: none;
 		color: white;
-		font-family: "Montserrat",sans-serif;
 	}
 	h2{
-		font-family: "Montserrat",sans-serif;
 		font-size: 3.2vw;
 		letter-spacing: 0.1em;
 		text-align: center;
 		color: white;
 	}
-		
+    .wrapper {
+      	flex: 80%;
+      	display: flex;
+      	flex-direction: column;
+      	background-color: black;
+      	align-items: center;
+      	color: white;
+      	height: 100vh;
+  	}
+  	.wrapper p {
+      	font-size: 2vw;
+      	letter-spacing: 0.3em;
+      	margin: 0;
+      	margin-top: 3.5vh;
+  	}
+  	.wrapper h1 {
+       	font-size: 8vw;
+      	letter-spacing: 0.3em;
+      	margin: 0;
+      	margin-top: 20vh;
+  	}
+  	.home{
+  		display: flex;
+  	}		
 	</style>
-
-	<div class="nav">
-		<img src="download.png" id="oasislogo">
-		<h2>OASIS '18</h2>
-		<div class="main-links">
-			<a href="#" class="links">HOME</a>
-			<a href="#" class="links">ABOUT US</a>
-			<a href="#" class="links">RULES</a>
-			<a href="#" class="links">DESCRIPTION</a>
-			<a href="#" class="links">CONTACTS</a>
+</head>
+<body>
+	<div class="home">
+		<div class="nav">
+			<img src="download.png" id="oasislogo">
+			<h2>OASIS '18</h2>
+			<div class="main-links">
+				<a href="#" class="links">HOME</a>
+				<a href="#" class="links">ABOUT US</a>
+				<a href="#" class="links">RULES</a>
+				<a href="#" class="links">DESCRIPTION</a>
+				<a href="#" class="links">CONTACTS</a>
+			</div>
 		</div>
-	</div>
 	
+		<div class="wrapper">
+	        <h1> ROCKTAVES </h1>
+	        <p> 31st October 2018 </p>
+    	</div> 
+    	</div>	
+    </div>
 </body>
 </html>
