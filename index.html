@@ -1,41 +1,58 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>ROCKTAVES 2018</title>
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ROCKTAVES 2k18</title>
 </head>
+<body>
 
-<body onload="show()">
+	<style type="text/css">
+	html,body{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+	}
+	.nav{
+		background-color: grey;
+		width: 20%;
+		height: 100%;
+	}
+	#oasislogo{
+		width: 100%;
+	}
+	.main-links{
+		display: flex;
+		flex-direction: column;
+		padding-left: 2vw;
+		font-size: 1.8vw;
+		line-height: 8vh;
+	}
+	.links{
+		text-decoration: none;
+		color: white;
+		font-family: "Montserrat",sans-serif;
+	}
+	h2{
+		font-family: "Montserrat",sans-serif;
+		font-size: 3.2vw;
+		letter-spacing: 0.1em;
+		text-align: center;
+		color: white;
+	}
+		
+	</style>
 
-    
-    <div class="home">
-        <div class="top-bar">
-            <img src="css/images/download.png" id="oasislogo">
-            <img src="css/images/facebook-logo.png" id="facebook">
-            <img src="css/images/instagram-logo.png" id="instagram">
-            <img src="css/images/headphones.png" id="hamburger" height="64px" width="64px">
-        </div>
-        <div class="mainhome">
-             <div class="nav">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT US</a>
-                <a href="#">RULES</a>
-                <a href="#">DESCRIPTION</a>
-                <a href="#">CONTACT</a>
-            </div>
-            <div id="hider" class="rocklogo">
-                <h1>ROCKTAVES</h1>
-                <p>27 Oct 2018</p>
-            </div>
-
-        </div>
-    </div>
-    
-    <script>
-    	function show() {
-    		document.getElementById("hider").style.display = "block";
-    	}
-    </script>
+	<div class="nav">
+		<img src="download.png" id="oasislogo">
+		<h2>OASIS '18</h2>
+		<div class="main-links">
+			<a href="#" class="links">HOME</a>
+			<a href="#" class="links">ABOUT US</a>
+			<a href="#" class="links">RULES</a>
+			<a href="#" class="links">DESCRIPTION</a>
+			<a href="#" class="links">CONTACTS</a>
+		</div>
+	</div>
+	
 </body>
 </html>
