@@ -16,29 +16,23 @@
 		width: 100%;
 		font-family: 'Montserrat', sans-serif;
 		scroll-behavior: smooth;
-		}
-
-	.nav{
+	}
+	.nav {
 		display: flex;
 		flex-direction: row;
 		background-color: black;
 		opacity: 0.7;
-		justify-content: space-between;
+		justify-content: space-around;
 		height: 20vh;
 	}
-	#oasis-logo{
-		width: 20vw;
-	}
-
 	.main-links{
-		padding-right: 2vw;
-		font-size: 1.8vw;
-		line-height: 8vh;
+		font-size: 1.6vw;
+		line-height: 20vh;
 		text-decoration: none;
 		color: white;
-		padding-top: 1vh;
+		width: 100%;
+		text-align: center;
 	}
-	
     .wrapper {
       	flex: 100%;
       	display: flex;
@@ -53,13 +47,25 @@
       	font-size: 2vw;
       	letter-spacing: 0.3em;
       	margin: 0;
-      	margin-top: 3.2vh;
+      	margin-top: 6.2vh;
+      	animation: appear-p 1.5s;
+      	animation-fill-mode: forwards;
   	}
-  	.wrapper h1 {
+  	
+  	@keyframes appear-p {
+  		from { margin-top: 0.2vh; }
+  		to { margin-top: 6.2vh; }
+  	}
+  	#hider h1 {
        	font-size: 8vw;
       	letter-spacing: 0.3em;
       	margin: 0;
       	margin-top: 18vh;
+      	animation: appear-h 1.5s;
+  	}
+  	@keyframes appear-h {
+  		from { margin-top: 2vh; }
+  		to { margin-top: 18vh; }
   	}
   	#home{
   		background-image: url("hostile-886029_1920.jpg");
@@ -67,29 +73,35 @@
       	background-position: center;
       	background-repeat: no-repeat;
       	background-attachment: fixed;
-       	}	
-
-  	a:hover{
-  		font-size: 2vw;
-  		opacity: 1;
+    }	
+  	#home .nav a:hover{
+    		background-color: #fff;
+    		color: black;
+      	transition: all .1s ease-out;
+      	opacity: 1;
   	}	
-
+  	.nav .align-oasis {
+  		display: flex;
+  	}
 	</style>
 </head>
 <body>
 	<div id="home">
 		<div class="nav">
-			<img src="download.png" id="oasis-logo">
-			<a href="#home=" class="main-links">HOME</a>
+			<div class="align-oasis">
+				<a href="https://www.bits-oasis.org/2018main/"><img src="download.png" id="oasis-logo"></a>
+			</div>
+			<a href="#" class="main-links">HOME</a>
 			<a href="#" class="main-links">ABOUT US</a>
 			<a href="#" class="main-links">RULES</a>
 			<a href="#" class="main-links">DESCRIPTION</a>
 			<a href="#" class="main-links">CONTACT US</a>
 		</div>
-		<div class="wrapper">
+		<div id="hider" class="wrapper">
 	        <h1> ROCKTAVES </h1>
 	        <p> 31st October 2018 </p>
     	</div> 
-    </div>	
+    </div>
+
 </body>
 </html>
