@@ -15,18 +15,19 @@
 		height: 100%;
 		width: 100%;
 		font-family: 'Montserrat', sans-serif;
-	}
+		scroll-behavior: smooth;
+		}
+
 	.nav{
 		display: flex;
 		flex-direction: row;
 		background-color: black;
 		opacity: 0.7;
-		justify-content: flex-end;
-
+		justify-content: space-between;
 	}
 
 	.main-links{
-		padding-right: 4vw;
+		padding-right: 2vw;
 		font-size: 1.8vw;
 		line-height: 8vh;
 		text-decoration: none;
@@ -59,10 +60,14 @@
   	#home{
   		background-image: url("hostile-886029_1920.jpg");
       	background-size: cover;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-attachment: fixed;
   	}	
 
   	a:hover{
   		font-size: 2vw;
+  		opacity: 1;
   	}	
 
 	</style>
@@ -70,6 +75,7 @@
 <body>
 	<div id="home">
 		<div class="nav">
+			<img src="download.png" id="oasis-logo">
 			<a href="#home=" class="main-links">HOME</a>
 			<a href="#" class="main-links">ABOUT US</a>
 			<a href="#" class="main-links">RULES</a>
