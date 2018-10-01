@@ -16,25 +16,28 @@
 		width: 100%;
 		font-family: 'Montserrat', sans-serif;
 	}
-
+  html{
+    scroll-behavior: smooth;
+  }
 	.nav {
 		display: flex;
 		flex-direction: row;
 		background-color: black;
 		opacity: 0.7;
 		justify-content: space-around;
-		height: 20vh;
+		height: 14vh;
 	}
 	.main-links{
 		font-size: 1.6vw;
 		line-height: 20vh;
 		text-decoration: none;
 		color: white;
-		width: 100%;
+		width: 70vw;
 		text-align: center;
 	}
   #oasis-logo{
-    height: 20vh;
+    height: 14vh;
+    width:20vw;
   }
     .wrapper {
       	flex: 100%;
@@ -44,7 +47,7 @@
       	opacity: .7;
       	align-items: center;
       	color: white;
-      	height: 80vh;
+      	height: 86vh;
   	}
   	.wrapper p {
       	font-size: 2vw;
@@ -96,7 +99,7 @@
   		to { margin-top: 18vh; }
   	}
   	#home{
-  		background-image: url("hostile-886029_1920.jpg");
+  		background-image: url("back.jpg");
       	background-size: cover;
       	background-position: center;
       	background-repeat: no-repeat;
@@ -110,6 +113,7 @@
   	}	
   	.nav .align-oasis {
   		display: flex;
+
   	}
     .about{
       height: 60vh;
@@ -121,10 +125,11 @@
     .rule{
       height: 60vh;
       display: flex;
-      background-color: #282E34;
+      background-color: black;
       flex-direction: column;
       align-items: center;
       opacity: .9;
+      width: 98vw;
     }
     #DVM{
       height: 10vh;
@@ -133,6 +138,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 98vw;
     }
     #DVM h4{
       font-size: 4vh;
@@ -156,24 +162,28 @@
       opacity: .9;
     }
     .about-bg{
-      background-image: url("singer-690117_1280.jpg");
+      background-image: url("singer.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       height: 80vh;
-      width: 100vw;
+      width: 98vw;
       opacity: 0.7;
     }
     .rule-bg{
-      background-image: url("drums-2708199_1280.jpg");
+      background-image: url("drums.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       height: 80vh;
-      width: 100vw;   
+      width: 98vw;   
       opacity: 0.7;   
+    }
+    .images{
+      z-index: 100;
+      width: 10vw;
     }
 	</style>
 </head>
@@ -186,8 +196,11 @@
 			<a href="#home" class="main-links">HOME</a>
 			<a href="#about-us" class="main-links">ABOUT US</a>
 			<a href="#rules" class="main-links">RULES</a>
-			<a href="#" class="main-links">DESCRIPTION</a>
 			<a href="#contact-us" class="main-links">CONTACT US</a>
+      <div class="images">
+        <img src="facebook-logo.png">
+        <img src="instagram-logo.png">
+      </div>
 		</div>
 		<div id="hider" class="wrapper">
 	        <h1> ROCKTAVES </h1>
