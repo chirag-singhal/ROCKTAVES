@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ROCKTAVES 2k18</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	html,body{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: row;
+		background-color: black;
+		opacity: 0.7;
+		justify-content: space-around;
+		height: 20vh;
+	}
+	.main-links{
+		font-size: 1.6vw;
+		line-height: 20vh;
+		text-decoration: none;
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+  #oasis-logo{
+    height: 20vh;
+  }
+    .wrapper {
+      	flex: 100%;
+      	display: flex;
+      	flex-direction: column;
+      	background-color: black;
+      	opacity: .7;
+      	align-items: center;
+      	color: white;
+      	height: 80vh;
+  	}
+  	.wrapper p {
+      	font-size: 2vw;
+      	letter-spacing: 0.3em;
+      	margin: 0;
+      	margin-top: 6.2vh;
+      	animation: appear-p 1.5s;
+      	animation-fill-mode: forwards;
+  	}
+    #about-us p{
+        font-size: 1.6vw;
+        letter-spacing: 0.04em;
+        margin: 0;
+        margin-top: 8.2vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        word-spacing: 0.2em;
+        }
+  	
+  	@keyframes appear-p {
+  		from { margin-top: 0.2vh; }
+  		to { margin-top: 6.2vh; }
+  	}
+  	#hider h1 {
+       	font-size: 8vw;
+      	letter-spacing: 0.3em;
+      	margin: 0;
+      	margin-top: 18vh;
+      	animation: appear-h 1.5s;
+  	}
+    #about-us h1 ,#contact-us h1{
+        font-size: 5vw;
+        letter-spacing: 0.2em;
+        margin: 0;
+        margin-top: 5vh;
+        border-bottom: solid 2px;
+    }
+    #rules h1{
+       font-size: 5vw;
+      letter-spacing: 0.2em;
+      margin: 0;
+      margin-top: 5vh;
+      border-bottom: solid 2px;  
+      color: white;   
+    }
+  	@keyframes appear-h {
+  		from { margin-top: 2vh; }
+  		to { margin-top: 18vh; }
+  	}
+  	#home{
+  		background-image: url("hostile-886029_1920.jpg");
+      	background-size: cover;
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-attachment: fixed;
+    }	
+  	#home .nav a:hover{
+    		background-color: #fff;
+    		color: black;
+      	transition: all .1s ease-out;
+      	opacity: 1;
+  	}	
+  	.nav .align-oasis {
+  		display: flex;
+  	}
+    .about{
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: .9;
+    }
+    .rule{
+      height: 60vh;
+      display: flex;
+      background-color: #282E34;
+      flex-direction: column;
+      align-items: center;
+      opacity: .9;
+    }
+    #DVM{
+      height: 10vh;
+      background-color: #282E34;    
+      color: white; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #DVM h4{
+      font-size: 4vh;
+      line-height: 1vh;
+      margin: 0;
+      margin-top: 2.5vh;
+    }
+    #DVM p{
+      font-size: 3vh;
+      line-height: 1vh;
+      margin: 0;
+      margin-top: 3vh;
+
+    }
+    .contact{
+      height: 70vh;
+      display: flex;
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      opacity: .9;
+    }
+    .about-bg{
+      background-image: url("singer-690117_1280.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 80vh;
+      width: 100vw;
+      opacity: 0.7;
+    }
+    .rule-bg{
+      background-image: url("drums-2708199_1280.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 80vh;
+      width: 100vw;   
+      opacity: 0.7;   
+    }
+	</style>
+</head>
+<body>
+	<div id="home">
+		<div class="nav">
+			<div class="align-oasis">
+				<a href="https://www.bits-oasis.org/2018main/"><img src="download.png" id="oasis-logo"></a>
+			</div>
+			<a href="#home" class="main-links">HOME</a>
+			<a href="#about-us" class="main-links">ABOUT US</a>
+			<a href="#rules" class="main-links">RULES</a>
+			<a href="#" class="main-links">DESCRIPTION</a>
+			<a href="#contact-us" class="main-links">CONTACT US</a>
+		</div>
+		<div id="hider" class="wrapper">
+	        <h1> ROCKTAVES </h1>
+	        <p> 31st October 2018 </p>
+    	</div> 
+  </div>
+  <div id="about-us">
+    <div class="about">
+      <h1>ABOUT US</h1>
+      <p>Rocktaves is one of the most esteemed rock competitions in the country and endeavours to strengthen the fairly nascent Indian rock scene. Rocktaves is, in fact, responsible for launching some of the finest bands in the Indian rock scene today — Parikrama, Prestorika, Them Clones, The Superfuzz and Euphoria, to name a few. Get a chance to battle it out with the best and make your tryst with the legend.</p>
+    </div>
+    <div class="about-bg"></div>
+  </div>
+
+  <div id="rules">
+    <div class="rule">
+      <h1>RULES</h1>
+      
+    </div>
+    <div class="rule-bg">
+      
+    </div>
+  </div>
+
+  <div id="contact-us">
+    <div class="contact">
+      <h1>CONTACT US</h1>
+    </div>
+  </div>
+  <div id="DVM">
+    <h4>DVM</h4>
+    <p>ROCKTAVES 2018</p>
+  </div>
+</body>
+</html>
