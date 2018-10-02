@@ -8,11 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#home">HOME</a>
+			<a href="#about-us">ABOUT US</a>
+			<a href="#rules">RULES</a>
+			<a href="#">DESCRIPTION</a>
+			<a href="#">CONTACT US</a>
+		</div>
+	</div>
 	<div id="home">
 		<div class="nav">
 			<div class="align-oasis">
 				<a href="https://www.bits-oasis.org/2018main/"><img src="images/download.png" id="oasis-logo"></a>
-
 			</div>
 	  <div class="links">
 		<a href="#home" class="main-links">HOME</a>
@@ -23,7 +32,7 @@
 	  </div>
 		</div>
 		<div class="ham">
-			<i class="fa fa-bars"></i>
+			<span onclick="openNav()"> &#9776 </a>
 		</div>
 		<div id="hider" class="wrapper">
 			<h1> ROCKTAVES </h1>
@@ -58,6 +67,13 @@
 		elem.style.transform = "translateY(0)";
 		elem.style.opacity = "1";
 	}	
+	
+	function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+	}
+	function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+	}
 
 	window.onload = headingFadeIn; 
 </script>
