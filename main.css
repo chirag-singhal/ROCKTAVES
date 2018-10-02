@@ -1,0 +1,190 @@
+*{
+	box-sizing: border-box;
+}
+::-webkit-scrollbar { 
+	display: none; 
+}
+html {
+	scroll-behavior: smooth;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 20vh;
+	padding: 0 10px;
+	position: absolute;
+	z-index: 999;
+	width: 100vw;
+	}
+.main-links{
+	font-size: 1.4vw;
+	line-height: 20vh;
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+#home .nav a:hover{
+	border-bottom: solid;
+	transition: all 0.1s ease-in-out;
+	opacity: 1;
+}	
+.links a {
+	padding: 17px;
+}
+#oasis-logo{
+	height: 20vh;
+}
+.ham {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	display: none;
+}
+.ham i {
+	position: absolute;
+	right: 5vw;
+	color: #fff;
+	font-size: 6vw;
+	padding: 55px 20px;
+ }
+
+.wrapper {
+	flex: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.6);
+	align-items: center;
+	color: white;
+	height: 100vh;
+	justify-content: center;
+}
+.wrapper p {
+	font-size: 2vw;
+	letter-spacing: 0.3em;
+	margin: 0;
+	margin-top: 2vh;
+	animation-fill-mode: forwards;
+}
+#about-us p {
+	font-size: 2vw;
+	letter-spacing: 0.04em;
+	margin: 0;
+	margin-top: 8.2vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	text-align: center;
+	word-spacing: 0.2em;
+	}
+#hider h1 {
+	font-size: 8vw;
+	letter-spacing: 0.3em;
+	margin: 0;
+	transform: translateY(-50px);
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+#about-us h1 ,#contact-us h1{
+	font-size: 5vw;
+	letter-spacing: 0.2em;
+	margin: 0;
+	margin-top: 5vh;
+	border-bottom: solid 2px;
+}
+#rules {
+	min-height: 60vh;
+}
+#rules h1{
+  font-size: 5vw;
+  letter-spacing: 0.2em;
+  margin: 0;
+  margin-top: 5vh;
+  border-bottom: solid 2px;  
+  color: white;   
+}
+#home{
+	background-image: url("images/back.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}	
+.nav .align-oasis {
+	display: flex;
+}
+.about{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .9;
+  width: 100%;
+}
+#about-us p {
+	font-size: 1.5vw;
+}
+.rule{
+  height: 60vh;
+  display: flex;
+  background-color: #282E34;
+  flex-direction: column;
+  align-items: center;
+  opacity: .9;
+}
+
+.contact{
+  height: 70vh;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  opacity: .9;
+  width: 100%;
+}
+.about-bg{
+  background-image: url("images/singer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+}
+.rule-bg{
+  background-image: url("images/drums.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;   
+  opacity: 0.7;   
+}
+
+@media all and (max-width: 600px) {
+	.wrapper p {
+		font-size: 1.1em;
+	}
+	.wrapper h1 {
+		font-size: 1.3em;
+	}
+	.main-links {
+		display: none;
+	}
+	.ham {
+		display: block;
+	}
+	#about-us p {
+		font-size: 1em;
+	}
+}
