@@ -87,7 +87,7 @@ html,body{
 	opacity: 1;
 }	
 .links a {
-	padding: 17px;
+	padding: 19px;
 }
 #oasis-logo{
 	height: 20vh;
@@ -142,8 +142,8 @@ html,body{
 	font-size: 8vw;
 	letter-spacing: 0.3em;
 	margin: 0;
-	transform: translateY(-50px);
-	transition: all 0.5s ease-in-out;
+	transform: translateY(-70px);
+	transition: all 0.6s ease-in-out;
 	opacity: 0;
 }
 #about-us h1 ,#contact-us h1{
@@ -228,8 +228,8 @@ html,body{
 	.wrapper p {
 		font-size: 1.1em;
 	}
-	.wrapper h1 {
-		font-size: 1.3em;
+	#hider h1 {
+		font-size: 2.5em;
 	}
 	.main-links {
 		display: none;
