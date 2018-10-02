@@ -18,7 +18,6 @@
 		<a href="#home" class="main-links">HOME</a>
 		<a href="#about-us" class="main-links">ABOUT US</a>
 		<a href="#rules" class="main-links">RULES</a>
-		<a href="#" class="main-links">DESCRIPTION</a>
 		<a href="#contact-us" class="main-links">CONTACT US</a>
 	  </div>
 		</div>
@@ -54,11 +53,16 @@
 </body>
 <script>
 	function headingFadeIn() {
+		pFadeIn();
 		var elem = document.querySelector("#hider h1");
 		elem.style.transform = "translateY(0)";
 		elem.style.opacity = "1";
 	}	
-
+	function pFadeIn(){
+		var plem = document.querySelector("#hider p");
+		plem.style.transform= "translateY(0)";
+		plem.style.opacity= "1";
+	}
 	window.onload = headingFadeIn; 
 </script>
 </html>
