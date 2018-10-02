@@ -27,7 +27,7 @@ html,body{
 		right: 0;
 		background-color: rgba(0,0,0, 0.9);
 		overflow-x: hidden;
-		transition: 0.1s;
+		transition: 0.01s;
 	}
 
 	.overlay {
@@ -47,7 +47,7 @@ html,body{
 		font-size: 2em;
 		color: #818181;
 		display: block;
-		transition: 0.3s;
+		transition: 0.1s;
 	}
 
 	.overlay a:hover, .overlay a:focus {
