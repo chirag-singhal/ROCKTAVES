@@ -25,9 +25,9 @@ html,body{
 		z-index: 20;
 		top: 0;
 		right: 0;
-		background-color: rgba(0,0,0, 0.9);
+		background-color: rgba(0,0,0, 0.95);
 		overflow-x: hidden;
-		transition: 0.01s;
+		transition: 0.1s;
 	}
 
 	.overlay {
@@ -42,12 +42,12 @@ html,body{
 	}
 
 	.overlay a {
-		padding: 12px;
+		padding: 20px 12px;
 		text-decoration: none;
 		font-size: 2em;
 		color: #818181;
 		display: block;
-		transition: 0.1s;
+		transition: 0.3s;
 	}
 
 	.overlay a:hover, .overlay a:focus {
@@ -58,7 +58,7 @@ html,body{
 		position: absolute;
 		top: 15px;
 		left: 35px;
-		font-size: 80px;
+		font-size: 60px;
 	}
 }
 .nav {
@@ -127,8 +127,8 @@ html,body{
 	margin: 0;
 	margin-top: 2vh;
 	opacity: 0;
-	transform: translateY(5vh);
-	transition: all 0.5s ease-in-out;
+	transform: translateY(10vh);
+	transition: all 1s ease-in-out;
 }
 #about-us p {
 	font-size: 2vw;
@@ -144,8 +144,8 @@ html,body{
 	font-size: 8vw;
 	letter-spacing: 0.3em;
 	margin: 0;
-	transform: translateY(-5vh);
-	transition: all 0.5s ease-in-out;
+	transform: translateY(-10vh);
+	transition: all 1s ease-in-out;
 	opacity: 0;
 }
 #about-us h1 ,#contact-us h1{
@@ -243,7 +243,51 @@ html,body{
 		font-size: 1em;
 	}
 	#oasis-logo{
-		width: 50vw;
+		width: 230px;
+		height: 20vh;
+	}
+}
+
+@media all and (min-width: 801px) and (max-width: 1000px) {
+	.main-links {
+		/*display: none;*/
+		font-size: 1.6vw;
+	}
+	.wrapper p {
+		font-size: 1.1em;
+	}
+	.wrapper h1 {
+		font-size: 1.3em;
+	}
+	.ham {
+		display: none;
+	}
+	#about-us p {
+		font-size: 1em;
+	}
+	#oasis-logo{
+		width: 230px;
+		height: 20vh;
+	}
+}
+@media all and (min-width: 601px) and (max-width: 800px) {
+	.main-links {
+		font-size: 14px;
+	}
+	.wrapper p {
+		font-size: 1.1em;
+	}
+	.wrapper h1 {
+		font-size: 1.3em;
+	}
+	.ham {
+		display: none;
+	}
+	#about-us p {
+		font-size: 1em;
+	}
+	#oasis-logo{
+		width: 230px;
 		height: 20vh;
 	}
 }
