@@ -248,12 +248,12 @@ html,body{
 		left: 20px;
 	}
 	#about-us p {
-		font-size: 0.9em;
+		font-size: 1em;
 		margin-bottom: 20px;
 		margin-top: 5vh;
 	}
 	#oasis-logo{
-		width: 250px;
+		width: 210px;
 		height: 20vh;
 	}
 }
