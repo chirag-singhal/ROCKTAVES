@@ -6,13 +6,13 @@
 	}	
 	function pFadeIn(){
 		var plem = document.querySelector("#hider p");
-		plem.style.transform= "translateY(0)";
+		plem.style.transform= "translatez(0)";
 		plem.style.opacity= "1";
 	}
 	function openNav() {
-		document.getElementById("myNav").style.width = "100%";
+		document.getElementById("myNav").style.left = "0%";
 	}
 	function closeNav() {
-		document.getElementById("myNav").style.width = "0%";
+		document.getElementById("myNav").style.left = "-100%";
 	}
 	window.onload = headingFadeIn; 

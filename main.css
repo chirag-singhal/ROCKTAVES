@@ -20,18 +20,14 @@ html,body{
 @media all and (max-width: 600px) {
 	.overlay {
 		height: 100%;
-		width: 0;
-		position: fixed;
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: -100%;
 		z-index: 20;
-		top: 0;
-		right: 0;
 		background-color: rgba(0,0,0, 0.95);
 		overflow-x: hidden;
 		transition: 0.1s;
-	}
-
-	.overlay {
-		display: block;
 	}
 	.overlay-content {
 		position: relative;
@@ -183,9 +179,16 @@ html,body{
   align-items: center;
   opacity: .9;
   width: 100%;
+  margin-bottom: 20px;
 }
 #about-us p {
 	font-size: 1.5vw;
+}
+.bar{
+	width: 30px;
+	height: 4px;
+	margin-top: 5px;
+	background-color: white;
 }
 .rule{
   height: 60vh;
@@ -236,8 +239,12 @@ html,body{
 	.main-links {
 		display: none;
 	}
-	.ham {
+	.ham{
 		display: block;
+	}
+	.ham span{
+		position: absolute;
+		left: 15px;
 	}
 	#about-us p {
 		font-size: 1em;
