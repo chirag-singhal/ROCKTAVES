@@ -111,6 +111,7 @@ html,body{
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(0,0,0,0.6);
+	opacity: 0.8;
 	align-items: center;
 	color: white;
 	height: 100vh;
@@ -244,13 +245,15 @@ html,body{
 	}
 	.ham span{
 		position: absolute;
-		left: 15px;
+		left: 20px;
 	}
 	#about-us p {
-		font-size: 1em;
+		font-size: 0.9em;
+		margin-bottom: 20px;
+		margin-top: 5vh;
 	}
 	#oasis-logo{
-		width: 230px;
+		width: 210px;
 		height: 20vh;
 	}
 }
