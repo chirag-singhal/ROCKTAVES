@@ -25,9 +25,9 @@ html,body{
 		width: 100%;
 		left: -100%;
 		z-index: 20;
-		background-color: rgba(0,0,0, 0.95);
+		background-color: rgba(0,0,0, 0.9);
 		overflow-x: hidden;
-		transition: 0.1s;
+		transition: 0.5s;
 	}
 	.overlay-content {
 		position: relative;
@@ -43,6 +43,7 @@ html,body{
 		font-size: 2em;
 		color: #818181;
 		display: block;
+		color: white;
 		transition: 0.3s;
 	}
 
