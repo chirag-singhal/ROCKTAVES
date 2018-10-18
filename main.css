@@ -27,7 +27,7 @@ html,body{
 		z-index: 20;
 		background-color: rgba(0,0,0, 0.95);
 		overflow-x: hidden;
-		transition: 0.1s;
+		transition: 0.3s;
 	}
 	.overlay-content {
 		position: relative;
@@ -98,7 +98,7 @@ html,body{
 	right: 5vw;
 	color: #fff;
 	font-size: 6vw;
-	padding: 55px 20px;
+	padding: 50px 8px;
 	z-index: 15;
  }
  
@@ -128,7 +128,7 @@ html,body{
 	transition: all 1s ease-in-out;
 }
 .about{
-  	height: 60vh;
+  	height: 65vh;
   	display: flex;
   	flex-direction: column;
   	align-items: center;
@@ -190,7 +190,7 @@ html,body{
 	min-height: 70vh;
 }
 .rule{
-  	height: 70vh;
+  	height: 75vh;
   	display: flex;
   	color: white;
   	background-color: #282E34;
@@ -269,8 +269,8 @@ html,body{
 	.ham{
 		display: block;
 	}
-	.rule {
-		height: 110vh;
+	.rule ,.about{
+		height: 100%;
 	}
 	#rules ul {
 		padding-left: 30px;
@@ -281,7 +281,10 @@ html,body{
 		left: 20px;
 	}
 	#about-us h1, #rules h1, #contact-us h1 {
-		font-size: 1.6em;
+		font-size: 5vh;
+	}
+	.about p{
+		margin-bottom: 4vh;
 	}
 	#about-us p, #rules ul {
 		font-size: 0.9em;
@@ -316,9 +319,10 @@ html,body{
 	}
 	#about-us p {
 		font-size: 1.2em;
+		margin-bottom: 3vh;
 	}
-	.rule {
-		height: 80vh;
+	.rule,.about{
+		height: 100%;
 	}
 	#rules ul {
 		font-size: 1em;
@@ -326,10 +330,10 @@ html,body{
 	}
 	#oasis-logo{
 		width: 255px;
-		padding-top: 40px;
+		padding-top: 2vh;
 	}
 	.main-links{
-		font-size: 1.2em;
+		font-size: 0.8em;
 	}
 }
 
@@ -354,7 +358,7 @@ html,body{
 	}
 	#oasis-logo{
 		width: 260px;
-		padding-top: 40px;
+		padding-top: 2vh;
 	}
 	.main-links{
 		font-size: 1.4em;
@@ -389,6 +393,6 @@ html,body{
 		font-size: 2vw;
 	}
 	.rule {
-		height: 75vh;
+		height: 100%;
 	}
 }
