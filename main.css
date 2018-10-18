@@ -98,7 +98,7 @@ html,body{
 	right: 5vw;
 	color: #fff;
 	font-size: 6vw;
-	padding: 50px 8px;
+	padding: 45px 8px;
 	z-index: 15;
  }
  
@@ -165,7 +165,7 @@ html,body{
 }
 
 .contact{
-  	height: 65vh;
+  	height: 60vh;
   	display: flex;
   	background-color: #fff;
   	flex-direction: column;
@@ -215,7 +215,7 @@ html,body{
 }
 #rules ul>li {
 	/*line-height: 25px;*/
-	padding-bottom: 15px;
+	padding-bottom: 3vh;
 }
 #home{
 	background-image: url("images/back.jpg");
@@ -223,6 +223,8 @@ html,body{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
 }	
 .nav .align-oasis {
 	display: flex;
