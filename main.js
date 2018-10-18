@@ -15,5 +15,5 @@
 	function closeNav() {
 		document.getElementById("myNav").style.left = "-100%";
 	}
-
+	
 	window.onload = headingFadeIn; 
