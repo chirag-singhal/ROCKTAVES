@@ -25,9 +25,9 @@ html,body{
 		width: 100%;
 		left: -100%;
 		z-index: 20;
-		background-color: rgba(0,0,0, 0.9);
+		background-color: rgba(0,0,0, 0.95);
 		overflow-x: hidden;
-		transition: 0.5s;
+		transition: 0.1s;
 	}
 	.overlay-content {
 		position: relative;
@@ -43,7 +43,6 @@ html,body{
 		font-size: 2em;
 		color: #818181;
 		display: block;
-		color: white;
 		transition: 0.3s;
 	}
 
@@ -104,7 +103,7 @@ html,body{
  }
  
  .ham span:hover {
-	 cursor: pointer;
+	cursor: pointer;
  }
 
 .wrapper {
@@ -128,16 +127,27 @@ html,body{
 	transform: translateY(10vh);
 	transition: all 1s ease-in-out;
 }
+.about{
+  	height: 60vh;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	opacity: .9;
+  	width: 100%;
+  	margin-bottom: 20px;
+}
+
 #about-us p {
-	font-size: 2vw;
+	font-size: 1.5vw;
 	letter-spacing: 0.04em;
+	line-height: 30px;
 	margin: 0;
 	margin-top: 8.2vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	text-align: center;
 	word-spacing: 0.2em;
-	}
+}
 #hider h1 {
 	font-size: 8vw;
 	letter-spacing: 0.3em;
@@ -153,16 +163,59 @@ html,body{
 	margin-top: 5vh;
 	border-bottom: solid 2px;
 }
-#rules {
-	min-height: 60vh;
+
+.contact{
+  	height: 65vh;
+  	display: flex;
+  	background-color: #fff;
+  	flex-direction: column;
+  	align-items: center;
+  	opacity: .9;
+  	width: 100%;
 }
+
+#contact-us ul {
+	font-size: 3vw;
+	margin: 0;
+	list-style-type: none;
+	padding: unset;
+	padding-top: 12vh;
+	text-align: center;
+}
+#contact-us ul > li {
+	padding-bottom: 20px;
+}
+
+#rules {
+	min-height: 70vh;
+}
+.rule{
+  	height: 70vh;
+  	display: flex;
+  	color: white;
+  	background-color: #282E34;
+  	flex-direction: column;
+  	align-items: center;
+  	opacity: .9;
+}
+
 #rules h1{
-  font-size: 5vw;
-  letter-spacing: 0.2em;
-  margin: 0;
-  margin-top: 5vh;
-  border-bottom: solid 2px;  
-  color: white;   
+  	font-size: 5vw;
+  	letter-spacing: 0.2em;
+  	margin: 0;
+  	margin-top: 5vh;
+  	border-bottom: solid 2px;   
+}
+#rules ul {
+	list-style-type: circle;
+	font-size: 1.5vw;
+	margin: 0;
+	padding: 5vh 1.5vw 3vh 3vw;
+	line-height: 25px;
+}
+#rules ul>li {
+	/*line-height: 25px;*/
+	padding-bottom: 15px;
 }
 #home{
 	background-image: url("images/back.jpg");
@@ -174,61 +227,33 @@ html,body{
 .nav .align-oasis {
 	display: flex;
 }
-.about{
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: .9;
-  width: 100%;
-  margin-bottom: 20px;
-}
-#about-us p {
-	font-size: 1.5vw;
-}
+
 .bar{
 	width: 30px;
 	height: 4px;
 	margin-top: 5px;
 	background-color: white;
 }
-.rule{
-  height: 60vh;
-  display: flex;
-  background-color: #282E34;
-  flex-direction: column;
-  align-items: center;
-  opacity: .9;
-}
 
-.contact{
-  height: 70vh;
-  display: flex;
-  background-color: #fff;
-  flex-direction: column;
-  align-items: center;
-  opacity: .9;
-  width: 100%;
-}
 .about-bg{
-  background-image: url("images/singer.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 60vh;
-  width: 100%;
-  opacity: 0.7;
+  	background-image: url("images/singer.jpg");
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	height: 60vh;
+  	width: 100%;
+  	opacity: 0.7;
 }
 .rule-bg{
-  background-image: url("images/drums.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 60vh;
-  width: 100%;   
-  opacity: 0.7;   
+  	background-image: url("images/drums.jpg");
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	height: 60vh;
+  	width: 100%;   
+  	opacity: 0.7;   
 }
 
 @media all and (max-width: 600px) {
@@ -244,43 +269,38 @@ html,body{
 	.ham{
 		display: block;
 	}
+	.rule {
+		height: 110vh;
+	}
+	#rules ul {
+		padding-left: 30px;
+		padding-right: 15px;
+	}
 	.ham span{
 		position: absolute;
 		left: 20px;
 	}
+	#about-us h1, #rules h1, #contact-us h1 {
+		font-size: 1.6em;
+	}
+	#about-us p, #rules ul {
+		font-size: 0.9em;
+	}
+	#contact-us ul {
+		font-size: 1.1em;
+		line-height: 30px;
+	}
 	#about-us p {
-		font-size: 1em;
 		margin-bottom: 20px;
 		margin-top: 5vh;
 	}
+
 	#oasis-logo{
-		width: 210px;
+		width: 260px;
 		height: 20vh;
 	}
 }
 
-@media all and (min-width: 801px) and (max-width: 1000px) {
-	.main-links {
-		/*display: none;*/
-		font-size: 1.6vw;
-	}
-	.wrapper p {
-		font-size: 1.1em;
-	}
-	.wrapper h1 {
-		font-size: 1.3em;
-	}
-	.ham {
-		display: none;
-	}
-	#about-us p {
-		font-size: 1em;
-	}
-	#oasis-logo{
-		width: 230px;
-		height: 20vh;
-	}
-}
 @media all and (min-width: 601px) and (max-width: 800px) {
 	.main-links {
 		font-size: 14px;
@@ -295,10 +315,67 @@ html,body{
 		display: none;
 	}
 	#about-us p {
+		font-size: 1.2em;
+	}
+	.rule {
+		height: 80vh;
+	}
+	#rules ul {
+		font-size: 1em;
+		padding-left: 30px;
+	}
+	#oasis-logo{
+		width: 255px;
+		height: 20vh;
+	}
+}
+
+@media all and (min-width: 801px) and (max-width: 1000px) {
+	.main-links {
+		font-size: 1.6vw;
+	}
+	.wrapper p {
+		font-size: 1.1em;
+	}
+	.wrapper h1 {
+		font-size: 1.3em;
+	}
+	.ham {
+		display: none;
+	}
+	#about-us p {
+		font-size: 1.2em;
+	}
+	#rules ul {
 		font-size: 1em;
 	}
 	#oasis-logo{
-		width: 230px;
+		width: 260px;
 		height: 20vh;
+	}
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+	#contact-us ul {
+		font-size: 2vw;
+	}
+	#rules ul {
+		font-size: 1.5vw;
+	}
+	#about-us p {
+		font-size: 1.2em;
+	}
+}
+
+@media all and (min-width: 1201px) {
+	#rules ul {
+		font-size: 1.2em;
+		line-height: 30px;
+	}
+	#contact-us ul {
+		font-size: 2vw;
+	}
+	.rule {
+		height: 75vh;
 	}
 }
