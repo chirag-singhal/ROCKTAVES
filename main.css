@@ -52,7 +52,7 @@ html,body{
 
 	.overlay .closebtn {
 		position: absolute;
-		top: 5px;
+		top: 0px;
 		left: 25px;
 		font-size: 60px;
 	}
