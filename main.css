@@ -53,7 +53,8 @@ html,body{
 	.overlay .closebtn {
 		position: absolute;
 		top: 0px;
-		left: 25px;
+		left: 18px;
+		padding-top: 8px;
 		font-size: 60px;
 	}
 }
@@ -69,8 +70,9 @@ html,body{
 	}
 .main-links{
 	font-size: 1.4vw;
-	line-height: 20vh;
 	text-decoration: none;
+	line-height: 130px;
+	margin-top: 20px; 
 	color: white;
 	width: 100%;
 	text-align: center;
@@ -82,10 +84,14 @@ html,body{
 	opacity: 1;
 }	
 .links a {
-	padding: 17px;
+	padding-left: 17px;
+	padding-bottom: 17px;
+	padding-right: 17px;
 }
 #oasis-logo{
-	width: 300px;
+	width: 260px;
+	padding-top: 15px;
+	padding-left: 15px;
 }
 .ham {
 	position: relative;
@@ -98,7 +104,7 @@ html,body{
 	right: 5vw;
 	color: #fff;
 	font-size: 6vw;
-	padding: 45px 8px;
+	padding: 30px 5px;
 	z-index: 15;
  }
  
@@ -136,7 +142,9 @@ html,body{
   	width: 100%;
   	margin-bottom: 20px;
 }
-
+.contact ul li{
+	padding-top: 2vh;
+}
 #about-us p {
 	font-size: 1.5vw;
 	letter-spacing: 0.04em;
@@ -262,8 +270,8 @@ html,body{
 	.wrapper p {
 		font-size: 1.1em;
 	}
-	.wrapper h1 {
-		font-size: 1.3em;
+	#hider h1 {
+		font-size: 2em;
 	}
 	.main-links {
 		display: none;
@@ -301,8 +309,13 @@ html,body{
 	}
 
 	#oasis-logo{
-		width: 220px;
-		padding-top: 20px;
+		width: 190px;
+		margin-right: 10px;
+		padding-top: 12px;
+	}
+
+	.overlay a {
+		font-size: 1.7em;
 	}
 }
 
@@ -331,18 +344,17 @@ html,body{
 		padding-left: 30px;
 	}
 	#oasis-logo{
-		width: 255px;
-		padding-top: 2vh;
+		width: 200px;
+		padding-top: 10px;
+		margin-left: 6px;
 	}
 	.main-links{
-		font-size: 0.8em;
-	}
+		font-size: 1em;
+		line-height: 14vh;
+	}	
 }
 
 @media all and (min-width: 801px) and (max-width: 1000px) {
-	.main-links {
-		font-size: 1.6vw;
-	}
 	.wrapper p {
 		font-size: 1.1em;
 	}
@@ -359,17 +371,18 @@ html,body{
 		font-size: 1em;
 	}
 	#oasis-logo{
-		width: 260px;
-		padding-top: 2vh;
+		width: 220px;
+		padding-top: 10px;
+		padding-left: 10px;
 	}
 	.main-links{
-		font-size: 1.4em;
+		font-size: 1.15em;
+		line-height: 100px;
 	}
 }
-
 @media all and (min-width: 1001px) and (max-width: 1200px) {
 	#contact-us ul {
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 	#rules ul {
 		font-size: 1.5vw;
@@ -379,10 +392,13 @@ html,body{
 		letter-spacing:3px;
 	}
 	.main-links{
-		font-size: 1.5em;
+		font-size: 1.3em;
+		line-height: 110px;
 	}
 	#oasis-logo{
-		padding-top: 50px;
+		width: 230px;
+		padding-top: 10px;
+		padding-left: 10px;
 	}
 }
 
