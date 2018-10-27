@@ -134,7 +134,7 @@ html,body{
 	transform: translateY(10vh);
 	transition: all 1s ease-in-out;
 }
-.about{
+.about {  
   	height: 65vh;
   	display: flex;
   	flex-direction: column;
@@ -142,6 +142,11 @@ html,body{
   	opacity: .9;
   	width: 100%;
   	margin-bottom: 20px;
+}
+.about .address {
+	font-size: 1.5vw;
+	letter-spacing: 0.04em;
+	line-height: 30px;
 }
 .contact ul li{
 	padding-top: 2vh;
@@ -157,6 +162,7 @@ html,body{
 	text-align: center;
 	word-spacing: 0.2em;
 }
+
 #hider h1 {
 	font-size: 8vw;
 	letter-spacing: 0.3em;
@@ -171,6 +177,15 @@ html,body{
 	margin: 0;
 	margin-top: 5vh;
 	border-bottom: solid 2px;
+}
+
+#about-us span{
+	font-size: 1.7vw;
+	padding: 5px;
+}
+
+#about-us h1 {
+	margin-bottom: 40px;
 }
 
 .contact{
@@ -280,6 +295,9 @@ html,body{
 	.ham{
 		display: block;
 	}
+	#about-us span {
+		font-size: 1.1em;
+	}
 	.rule ,.about{
 		height: 100%;
 		background-attachment: scroll;
@@ -334,6 +352,9 @@ html,body{
 	.wrapper h1 {
 		font-size: 1.3em;
 	}
+	#about-us span {
+		font-size: 1.3em;
+	}
 	.ham {
 		display: none;
 	}
@@ -371,6 +392,9 @@ html,body{
 	}
 	#about-us p {
 		font-size: 1.2em;
+	}
+	#about-us span {
+		font-size: 1.3em;
 	}
 	#rules ul {
 		font-size: 1em;
