@@ -1,445 +1,487 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-::-webkit-scrollbar { 
-	display: none; 
+::-webkit-scrollbar {
+  display: none;
 }
 html {
-	scroll-behavior: smooth;
-	overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-html,body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	font-family: 'Montserrat', sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 .overlay {
-	display: none;
+  display: none;
 }
 @media all and (max-width: 600px) {
-	.overlay {
-		height: 100%;
-		display: block;
-		position: absolute;
-		width: 100%;
-		left: -100%;
-		z-index: 20;
-		background-color: rgba(0,0,0, 0.95);
-		overflow-x: hidden;
-		transition: 0.3s;
-	}
-	.overlay-content {
-		position: relative;
-		top: 25%;
-		width: 100%;
-		text-align: center;
-		margin-top: 30px;
-	}
+  .overlay {
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
 
-	.overlay a {
-		padding: 20px 12px;
-		text-decoration: none;
-		font-size: 2em;
-		color: white;
-		display: block;
-		transition: 0.3s;
-	}
+  .overlay a#phone-nav{
+    padding: 20px 12px;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
 
-	.overlay a:hover, .overlay a:focus {
-		color: #f1f1f1;
-	}
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
 
-	.overlay .closebtn {
-		position: absolute;
-		top: 0px;
-		left: 18px;
-		padding-top: 8px;
-		font-size: 60px;
-	}
+  .overlay .closebtn {
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+    top: 0px;
+    left: 18px;
+    padding-top: 8px;
+    font-size: 60px;
+  }
 }
 .nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 20vh;
-	padding: 0 10px;
-	position: absolute;
-	z-index: 10;
-	width: 100vw;
-	}
-.main-links{
-	font-size: 1.4vw;
-	text-decoration: none;
-	line-height: 125px;
-	margin-top: 20px; 
-	color: white;
-	width: 100%;
-	text-align: center;
-	font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20vh;
+  padding: 0 10px;
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
 }
-#home .main-links:hover{
-	border-bottom: solid;
-	transition: all 0.1s ease-in-out;
-	opacity: 1;
-}	
+.main-links {
+  font-size: 1.4vw;
+  text-decoration: none;
+  line-height: 125px;
+  margin-top: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+#home .main-links:hover {
+  border-bottom: solid;
+  transition: all 0.1s ease-in-out;
+  opacity: 1;
+}
 .links a {
-	padding-left: 17px;
-	padding-bottom: 17px;
-	padding-right: 17px;
+  padding-left: 17px;
+  padding-bottom: 17px;
+  padding-right: 17px;
 }
-#oasis-logo{
-	width: 260px;
-	padding-top: 15px;
-	padding-left: 15px;
+#oasis-logo {
+  width: 260px;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 .ham {
-	position: relative;
-	width: 100%;
-	color: #fff;
-	display: none;
+  position: relative;
+  width: 100%;
+  color: #fff;
+  display: none;
 }
 .ham span {
-	position: absolute;
-	right: 5vw;
-	color: #fff;
-	font-size: 6vw;
-	padding: 30px 5px;
-	z-index: 15;
- }
- 
- .ham span:hover {
-	cursor: pointer;
- }
+  position: absolute;
+  right: 5vw;
+  color: #fff;
+  font-size: 6vw;
+  padding: 30px 5px;
+  z-index: 15;
+}
+
+.ham span:hover {
+  cursor: pointer;
+}
 
 .wrapper {
-	flex: 100%;
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(0,0,0,0.6);
-	opacity: 0.8;
-	align-items: center;
-	color: white;
-	height: 100vh;
-	justify-content: center;
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  justify-content: center;
 }
 .wrapper p {
-	font-size: 2vw;
-	letter-spacing: 0.3em;
-	padding: 0 2vw;
-	margin: 0;
-	margin-top: 2vh;
-	opacity: 0;
-	transform: translateY(10vh);
-	transition: all 1s ease-in-out;
+  font-size: 2vw;
+  letter-spacing: 0.3em;
+  padding: 0 2vw;
+  margin: 0;
+  margin-top: 2vh;
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: all 1s ease-in-out;
 }
-.about {  
-  	height: 65vh;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	opacity: .9;
-  	width: 100%;
-  	margin-bottom: 20px;
+
+.social {
+	/* height: 20px; */
+	position: absolute;
+	left: 8%;
+	bottom: 5%;
+	/* width: 100px; */
+	/* background: red; */
+	opacity: 200;
+	font-size: 2.3em;
+	color: #fff;	
+}
+
+.social-icons {
+	margin-right: 30px;
+}
+
+.ham-social {
+	color: #fff;
+	text-decoration: none;
+}
+
+.about {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .about .address {
-	font-size: 1.5vw;
-	letter-spacing: 0.04em;
-	line-height: 30px;
+  font-size: 1.5vw;
+  letter-spacing: 0.04em;
+  line-height: 30px;
 }
-.contact ul li{
-	padding-top: 2vh;
+.contact ul li {
+  padding-top: 2vh;
 }
 #about-us p {
-	font-size: 1.5vw;
-	letter-spacing: 0.04em;
-	line-height: 40px;
-	margin: 0;
-	margin-top: 8.2vh;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	text-align: center;
-	word-spacing: 0.2em;
+  font-size: 1.5vw;
+  letter-spacing: 0.04em;
+  line-height: 40px;
+  margin: 0;
+  margin-top: 8.2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: center;
+  word-spacing: 0.2em;
 }
 
 #hider h1 {
-	font-size: 8vw;
-	letter-spacing: 0.3em;
-	margin: 0;
-	transform: translateY(-10vh);
-	transition: all 1s ease-in-out;
-	opacity: 0;
+  font-size: 8vw;
+  letter-spacing: 0.3em;
+  margin: 0;
+  transform: translateY(-10vh);
+  transition: all 1s ease-in-out;
+  opacity: 0;
 }
-#about-us h1 ,#contact-us h1{
-	font-size: 5vw;
-	letter-spacing: 0.2em;
-	margin: 0;
-	margin-top: 5vh;
-	border-bottom: solid 2px;
+#about-us h1,
+#contact-us h1 {
+  font-size: 5vw;
+  letter-spacing: 0.2em;
+  margin: 0;
+  margin-top: 5vh;
+  border-bottom: solid 2px;
 }
 
-#about-us span{
-	font-size: 1.7vw;
-	padding: 5px;
+#about-us span {
+  font-size: 1.7vw;
+  padding: 5px;
 }
 
 #about-us h1 {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.contact{
-  	height: 45vh;
-  	display: flex;
-  	background-color: #fff;
-  	flex-direction: column;
-  	align-items: center;
-  	opacity: .9;
-  	width: 100%;
+.contact {
+  height: 45vh;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
+  width: 100%;
 }
 
 #contact-us ul {
-	font-size: 3vw;
-	margin: 0;
-	list-style-type: none;
-	padding: unset;
-	padding-top: 8vh;
-	text-align: center;
+  font-size: 3vw;
+  margin: 0;
+  list-style-type: none;
+  padding: unset;
+  padding-top: 8vh;
+  text-align: center;
 }
 #contact-us ul > li {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #rules {
-	min-height: 70vh;
+  min-height: 70vh;
 }
-.rule{
-  	height: 75vh;
-  	display: flex;
-  	color: white;
-  	background-color: #282E34;
-  	flex-direction: column;
-  	align-items: center;
-  	opacity: .9;
+.rule {
+  height: 75vh;
+  display: flex;
+  color: white;
+  background-color: #282e34;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
 }
 
-#rules h1{
-  	font-size: 5vw;
-  	letter-spacing: 0.2em;
-  	margin: 0;
-  	margin-top: 5vh;
-  	border-bottom: solid 2px;   
+#rules h1 {
+  font-size: 5vw;
+  letter-spacing: 0.2em;
+  margin: 0;
+  margin-top: 5vh;
+  border-bottom: solid 2px;
 }
 #rules ul {
-	list-style-type: circle;
-	font-size: 1.5vw;
-	margin: 0;
-	padding: 5vh 1.5vw 3vh 3vw;
-	line-height: 25px;
+  list-style-type: circle;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 5vh 1.5vw 3vh 3vw;
+  line-height: 25px;
 }
-#rules ul>li {
-	/*line-height: 25px;*/
-	padding-bottom: 3vh;
+#rules ul > li {
+  /*line-height: 25px;*/
+  padding-bottom: 3vh;
 }
-#home{
-	background-image: url("images/back.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 100vh;
-	width: 100%;
-}	
+#home {
+  background-image: url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
 .nav .align-oasis {
-	display: flex;
+  display: flex;
 }
 
-.bar{
-	width: 30px;
-	height: 4px;
-	margin-top: 5px;
-	background-color: white;
+.bar {
+  width: 30px;
+  height: 4px;
+  margin-top: 5px;
+  background-color: white;
 }
 
-.about-bg{
-  	background-image: url("images/singer.jpg");
-  	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	height: 60vh;
-  	width: 100%;
-  	opacity: 0.7;
+.about-bg {
+  background-image: url("images/singer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+  opacity: 0.7;
 }
-.rule-bg{
-  	background-image: url("images/drums.jpg");
-  	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	height: 60vh;
-  	width: 100%;   
-  	opacity: 0.7;   
+.rule-bg {
+  background-image: url("images/drums.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+  opacity: 0.7;
 }
 
 @media all and (max-width: 600px) {
-	.wrapper p {
-		font-size: 1.1em;
-	}
-	#hider h1 {
-		font-size: 2em;
-	}
-	.main-links {
-		display: none;
-	}
-	.ham{
-		display: block;
-	}
-	#about-us span {
-		font-size: 1.1em;
-	}
-	.rule ,.about{
-		height: 100%;
-		background-attachment: scroll;
-	}
-	#home{
-		background-attachment: scroll;
-	}
-	#rules ul {
-		padding-left: 30px;
-		padding-right: 15px;
-	}
-	.ham span{
-		position: absolute;
-		left: 20px;
-	}
-	#about-us h1, #rules h1, #contact-us h1 {
-		font-size: 5vh;
-	}
-	.about p{
-		margin-bottom: 4vh;
-	}
-	#about-us p, #rules ul {
-		font-size: 0.9em;
-	}
-	#contact-us ul {
-		font-size: 1.1em;
-		line-height: 30px;
-	}
-	#about-us p {
-		margin-bottom: 20px;
-		margin-top: 5vh;
-	}
+  .wrapper p {
+    font-size: 1.1em;
+  }
+  .social {
+	  display: none;
+  }
 
-	#oasis-logo{
-		width: 190px;
-		margin-right: 10px;
-		padding-top: 12px;
-	}
+  .mobile-social {
+	  position: absolute;
+	  bottom: 10%;
+	  left: 32%;	
+  }
 
-	.overlay a {
-		font-size: 1.7em;
-	}
+  #hider h1 {
+    font-size: 2em;
+  }
+  .main-links {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  #about-us span {
+    font-size: 1.1em;
+  }
+  .rule,
+  .about {
+    height: 100%;
+    background-attachment: scroll;
+  }
+  #home {
+    background-attachment: scroll;
+  }
+  #rules ul {
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .ham span {
+    position: absolute;
+    left: 20px;
+  }
+  #about-us h1,
+  #rules h1,
+  #contact-us h1 {
+    font-size: 5vh;
+  }
+  .about p {
+    margin-bottom: 4vh;
+  }
+  #about-us p,
+  #rules ul {
+    font-size: 0.9em;
+  }
+  #contact-us ul {
+    font-size: 1.1em;
+    line-height: 30px;
+  }
+  #about-us p {
+    margin-bottom: 20px;
+    margin-top: 5vh;
+  }
+
+  #oasis-logo {
+    width: 190px;
+    margin-right: 10px;
+    padding-top: 12px;
+  }
+
+  .overlay a {
+    font-size: 1.7em;
+  }
 }
 
 @media all and (min-width: 601px) and (max-width: 800px) {
-	.main-links {
-		font-size: 14px;
-	}
-	.wrapper p {
-		font-size: 1.1em;
-	}
-	.wrapper h1 {
-		font-size: 1.3em;
-	}
-	#about-us span {
-		font-size: 1.3em;
-	}
-	.ham {
-		display: none;
-	}
-	#about-us p {
-		font-size: 1.2em;
-		margin-bottom: 3vh;
-	}
-	.rule,.about{
-		height: 100%;
-	}
-	#rules ul {
-		font-size: 1em;
-		padding-left: 30px;
-	}
-	#oasis-logo{
-		width: 200px;
-		padding-top: 10px;
-		margin-left: 6px;
-	}
-	.main-links{
-		font-size: 1em;
-		line-height: 14vh;
-	}	
+  .main-links {
+    font-size: 14px;
+  }
+  .wrapper p {
+    font-size: 1.1em;
+  }
+  .wrapper h1 {
+    font-size: 1.3em;
+  }
+  #about-us span {
+    font-size: 1.3em;
+  }
+  .ham {
+    display: none;
+  }
+  #about-us p {
+    font-size: 1.2em;
+    margin-bottom: 3vh;
+  }
+  .rule,
+  .about {
+    height: 100%;
+  }
+  #rules ul {
+    font-size: 1em;
+    padding-left: 30px;
+  }
+  #oasis-logo {
+    width: 200px;
+    padding-top: 10px;
+    margin-left: 6px;
+  }
+  .main-links {
+    font-size: 1em;
+    line-height: 14vh;
+  }
 }
 
 @media all and (min-width: 801px) and (max-width: 1000px) {
-	.wrapper p {
-		font-size: 1.1em;
-	}
-	.wrapper h1 {
-		font-size: 1.3em;
-	}
-	.ham {
-		display: none;
-	}
-	#about-us p {
-		font-size: 1.2em;
-	}
-	#about-us span {
-		font-size: 1.3em;
-	}
-	#rules ul {
-		font-size: 1em;
-	}
-	#oasis-logo{
-		width: 220px;
-		padding-top: 10px;
-		padding-left: 10px;
-	}
-	.main-links{
-		font-size: 1.15em;
-		line-height: 100px;
-	}
+  .wrapper p {
+    font-size: 1.1em;
+  }
+  .wrapper h1 {
+    font-size: 1.3em;
+  }
+  .ham {
+    display: none;
+  }
+  #about-us p {
+    font-size: 1.2em;
+  }
+  #about-us span {
+    font-size: 1.3em;
+  }
+  #rules ul {
+    font-size: 1em;
+  }
+  #oasis-logo {
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .main-links {
+    font-size: 1.15em;
+    line-height: 100px;
+  }
 }
 @media all and (min-width: 1001px) and (max-width: 1200px) {
-	#contact-us ul {
-		font-size: 3vw;
-	}
-	#rules ul {
-		font-size: 1.5vw;
-	}
-	#about-us p {
-		font-size: 1.6em;
-		letter-spacing:3px;
-	}
-	.main-links{
-		font-size: 1.3em;
-		line-height: 110px;
-	}
-	#oasis-logo{
-		width: 230px;
-		padding-top: 10px;
-		padding-left: 10px;
-	}
+  #contact-us ul {
+    font-size: 3vw;
+  }
+  #rules ul {
+    font-size: 1.5vw;
+  }
+  #about-us p {
+    font-size: 1.6em;
+    letter-spacing: 3px;
+  }
+  .main-links {
+    font-size: 1.3em;
+    line-height: 110px;
+  }
+  #oasis-logo {
+    width: 230px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 }
 
 @media all and (min-width: 1201px) {
-	#rules ul {
-		font-size: 1.2em;
-		line-height: 30px;
-	}
-	#contact-us ul {
-		font-size: 2vw;
-	}
-	.rule {
-		height: 100%;
-	}
+  #rules ul {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+  #contact-us ul {
+    font-size: 2vw;
+  }
+  .rule {
+    height: 100%;
+  }
 }
