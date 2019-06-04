@@ -33,7 +33,7 @@ body {
   }
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 12%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -74,7 +74,7 @@ body {
   width: 100vw;
 }
 .main-links {
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   text-decoration: none;
   line-height: 125px;
   margin-top: 20px;
@@ -89,9 +89,9 @@ body {
   opacity: 1;
 }
 .links a {
-  padding-left: 17px;
+  padding-left: 23px;
   padding-bottom: 17px;
-  padding-right: 17px;
+  padding-right: 23px;
 }
 #oasis-logo {
   width: 260px;
@@ -216,7 +216,7 @@ body {
 }
 
 .contact {
-  height: 45vh;
+  height: 50vh;
   display: flex;
   background-color: #fff;
   flex-direction: column;
@@ -251,8 +251,8 @@ body {
 }
 
 .rules-content {
-  text-align: center;
-  height:45vh;
+  /* text-align: center; */
+  height:50vh;
   overflow-y: scroll;
   width: 80%;
   padding: 30px 10px;
@@ -260,20 +260,20 @@ body {
 }
 
 .rules-content ul li {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   margin-bottom: 10px;
 }
 
 .rules-content h2 {
-  font-size: 2.5vw;
+  font-size: 2.3vw;
 }
 
 .rules-content h3 {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
 }
 
 .rules-content p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   line-height: 33px;
 }
 
@@ -283,6 +283,10 @@ body {
 
 .rules-content ul#procedure-1 {
   padding-bottom: 5px;
+}
+
+#regions {
+  margin: 0;
 }
 
 @media all and (max-width: 600px) {
