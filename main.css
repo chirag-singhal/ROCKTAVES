@@ -95,8 +95,8 @@ body {
 }
 #oasis-logo {
   width: 260px;
-  padding-top: 15px;
-  padding-left: 15px;
+  padding-top: 30px;
+  padding-left: 25px;
 }
 .ham {
   position: relative;
@@ -423,9 +423,9 @@ body {
   }
 
   #oasis-logo {
-    width: 190px;
-    margin-right: 10px;
-    padding-top: 12px;
+    width: 210px;
+    margin-right: 15px;
+    padding-top: 20px;
   }
 
   .overlay a {
